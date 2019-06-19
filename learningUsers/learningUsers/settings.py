@@ -29,7 +29,7 @@ SECRET_KEY = '-kap^wdv+r15g8ap8yzae19x*ksus@hfcw&k=qx!^1=gap6tfp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['walper2020.pythonanywhere.com']
 
 
 # Application definition
