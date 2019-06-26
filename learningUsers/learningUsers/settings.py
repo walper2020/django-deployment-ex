@@ -29,7 +29,8 @@ SECRET_KEY = '-kap^wdv+r15g8ap8yzae19x*ksus@hfcw&k=qx!^1=gap6tfp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['walper2020.pythonanywhere.com']
+ALLOWED_HOSTS = ['zaragram.ir','127.0.0.1',
+    'walper2020.pythonanywhere.com']
 
 
 # Application definition
@@ -80,9 +81,16 @@ WSGI_APPLICATION = 'learningUsers.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'DB_NAME',
+        'OPTIONS': {
+            'read_default_file': '/path/to/my.cnf',
+        }
     }
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
 }
 
 
